@@ -4,7 +4,6 @@ int main()
   FILE *fp;
   char a,c;
   printf("Enter the character whose frequency is to be checked from the file:\n");
-  scanf("%c",&a);
   int k=0;
   fp=fopen("test.txt","r");
   if(fp==NULL)
@@ -13,6 +12,7 @@ int main()
   {
     while(c!=EOF)
     {
+      scanf("%c",&a);
       c=getc(fp);
       if(c==a)
       k++;
